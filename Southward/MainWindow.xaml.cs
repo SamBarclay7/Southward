@@ -32,7 +32,9 @@ namespace Southward
             Rabbit x = new Rabbit(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
         }
 
-        
-        
+        private void cbxCurrentWeapon2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

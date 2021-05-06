@@ -15,7 +15,7 @@ namespace Southward
         private double stability;
         private double agility;
         private double charisma;
-        private double doubleimidation;
+        private double intimidation;
         private double strength;
         private double dexterity;
         private double skill;
@@ -55,7 +55,8 @@ namespace Southward
         private double demoRes;
         private double concRes;
         private double suffRes;
-        public Bat(double vitality, double endurance, double mana, double stability, double agility, double charisma, double doubleimidation, double strength, double dexterity, double skill, double hearth, double spirit, double mind)
+        public Bat(double vitality, double endurance, double mana, double stability, double agility, double charisma, 
+            double intimidation, double strength, double dexterity, double skill, double hearth, double spirit, double mind)
         {
             stance = 's';
 
@@ -65,7 +66,7 @@ namespace Southward
             this.stability = stability;
             this.agility = agility;
             this.charisma = charisma;
-            this.doubleimidation = doubleimidation;
+            this.intimidation = intimidation;
             this.strength = strength;
             this.dexterity = dexterity;
             this.skill = skill;
@@ -161,7 +162,7 @@ namespace Southward
         }
         public void updatedoubleimidation(double amount)
         {
-            doubleimidation += amount;
+            intimidation += amount;
             updateDefence();
             updateBaseStats();
             updateBaseResistances();
