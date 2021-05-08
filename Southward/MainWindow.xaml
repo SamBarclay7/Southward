@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="Southward" Height="450" Width="800" WindowState="Maximized" WindowStyle="SingleBorderWindow">
 
-    <Grid Background="#FFAFDEB7">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\User\Source\Repos\Southward\Southward\Assets\Thompa.png" />
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="351*"/>
         </Grid.ColumnDefinitions>
-        <Grid x:Name="grdPlayer1" HorizontalAlignment="Left" Height="97" Margin="10,10,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer1" HorizontalAlignment="Left" Height="97" Margin="10,10,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName1" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP1" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP1" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -26,11 +29,12 @@
             <Label x:Name="lblCurrentMP1" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP1" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP1" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem1" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon1" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxSelectedSpell1" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
-            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="182,28,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btnAttack1" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer2" HorizontalAlignment="Left" Height="97" Margin="10,130,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer2" HorizontalAlignment="Left" Height="97" Margin="10,130,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName2" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP2" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP2" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -44,9 +48,12 @@
             <Label x:Name="lblCurrentMP2" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP2" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP2" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
-            <ComboBox x:Name="cbxCurrentWeapon2" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbxCurrentWeapon2_SelectionChanged"/>
+            <ComboBox x:Name="cbxCurrentItem2" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxCurrentWeapon2" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell2" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack2" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer3" HorizontalAlignment="Left" Height="97" Margin="10,250,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer3" HorizontalAlignment="Left" Height="97" Margin="10,250,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName3" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP3" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP3" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -60,9 +67,12 @@
             <Label x:Name="lblCurrentMP3" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP3" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP3" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem3" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon3" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell3" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack3" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer4" HorizontalAlignment="Left" Height="97" Margin="10,370,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer4" HorizontalAlignment="Left" Height="97" Margin="10,370,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName4" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP4" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP4" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -76,9 +86,12 @@
             <Label x:Name="lblCurrentMP4" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP4" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP4" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem4" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon4" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell4" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack4" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer5" HorizontalAlignment="Left" Height="97" Margin="10,490,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer5" HorizontalAlignment="Left" Height="97" Margin="10,490,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName5" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP5" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP5" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -92,9 +105,12 @@
             <Label x:Name="lblCurrentMP5" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP5" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP5" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem5" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon5" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell5" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack5" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer6" HorizontalAlignment="Left" Height="97" Margin="10,610,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer6" HorizontalAlignment="Left" Height="97" Margin="10,610,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName6" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP6" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP6" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -108,9 +124,12 @@
             <Label x:Name="lblCurrentMP6" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP6" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP6" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem6" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon6" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell6" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack6" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer7" HorizontalAlignment="Left" Height="97" Margin="10,730,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer7" HorizontalAlignment="Left" Height="97" Margin="10,730,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName7" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP7" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP7" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -124,9 +143,12 @@
             <Label x:Name="lblCurrentMP7" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP7" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP7" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem7" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon7" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell7" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack7" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdPlayer8" HorizontalAlignment="Left" Height="97" Margin="10,850,0,0" VerticalAlignment="Top" Width="261" Grid.ColumnSpan="2">
+        <Grid x:Name="grdPlayer8" HorizontalAlignment="Left" Height="97" Margin="10,850,0,0" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2">
             <Label x:Name="lblName8" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblHP8" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblCurrentHP8" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
@@ -140,177 +162,232 @@
             <Label x:Name="lblCurrentMP8" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,76,0,0"/>
             <Label x:Name="lblSlashMP8" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,76,0,0"/>
             <Label x:Name="lblTotalMP8" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,76,0,0"/>
+            <ComboBox x:Name="cbxCurrentItem8" HorizontalAlignment="Left" Margin="133,23,0,0" VerticalAlignment="Top" Width="120"/>
             <ComboBox x:Name="cbxCurrentWeapon8" HorizontalAlignment="Left" Margin="133,45,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="cbxSelectedSpell8" HorizontalAlignment="Left" Margin="133,66,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnAttack8" Content="Attack" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
         </Grid>
-        <Grid x:Name="grdEnemy1" HorizontalAlignment="Right" Height="51" Margin="0,10,0,0" VerticalAlignment="Top" Width="204" Grid.Column="1">
-            <Label x:Name="lblEnemyName1" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP1" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP1" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP1" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP1" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
-            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="-4,17,0,0" VerticalAlignment="Top"/>
+        <Grid x:Name="grdEnemy1" HorizontalAlignment="Right" Height="51" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName1" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP1" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP1" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP1" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP1" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack1" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy2" HorizontalAlignment="Right" Height="51" Margin="0,60,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
-            <Label x:Name="lblEnemyName2" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP2" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP2" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP2" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP2" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+        <Grid x:Name="grdEnemy2" HorizontalAlignment="Right" Height="51" Margin="0,60,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName2" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP2" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP2" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP2" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP2" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack2" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy3" HorizontalAlignment="Right" Height="51" Margin="0,110,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
-            <Label x:Name="lblEnemyName3" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP3" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP3" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP3" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP3" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+        <Grid x:Name="grdEnemy3" HorizontalAlignment="Right" Height="51" Margin="0,110,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName3" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP3" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP3" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP3" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP3" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack3" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy4" HorizontalAlignment="Right" Height="51" Margin="0,160,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
-            <Label x:Name="lblEnemyName4" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP4" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP4" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP4" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP4" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+        <Grid x:Name="grdEnemy4" HorizontalAlignment="Right" Height="51" Margin="0,160,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName4" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP4" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP4" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP4" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP4" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack4" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy5" HorizontalAlignment="Right" Height="51" Margin="0,210,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
-            <Label x:Name="lblEnemyName5" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP5" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP5" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP5" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP5" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+        <Grid x:Name="grdEnemy5" HorizontalAlignment="Right" Height="51" Margin="0,210,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName5" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP5" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP5" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP5" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP5" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack5" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy6" HorizontalAlignment="Right" Height="51" Margin="0,260,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
-            <Label x:Name="lblEnemyName6" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP6" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP6" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP6" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP6" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+        <Grid x:Name="grdEnemy6" HorizontalAlignment="Right" Height="51" Margin="0,260,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName6" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP6" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP6" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP6" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP6" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack6" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy7" HorizontalAlignment="Right" Height="51" Margin="0,310,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
-            <Label x:Name="lblEnemyName7" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="180"/>
-            <Label x:Name="lblEnemyHP7" Content="HP:" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
-            <Label x:Name="lblEnemyCurrentHP7" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
-            <Label x:Name="lblEnemySlashHP7" Content="/" HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
-            <Label x:Name="lblEnemyTotalHP7" Content="8888" HorizontalAlignment="Right" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+        <Grid x:Name="grdEnemy7" HorizontalAlignment="Right" Height="51" Margin="0,310,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+            <Label x:Name="lblEnemyName7" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
+            <Label x:Name="lblEnemyHP7" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
+            <Label x:Name="lblEnemyCurrentHP7" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
+            <Label x:Name="lblEnemySlashHP7" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
+            <Label x:Name="lblEnemyTotalHP7" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack7" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy8" HorizontalAlignment="Right" Height="51" Margin="0,360,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy8" HorizontalAlignment="Right" Height="51" Margin="0,360,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName8" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP8" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP8" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP8" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP8" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack8" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy9" HorizontalAlignment="Right" Height="51" Margin="0,410,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy9" HorizontalAlignment="Right" Height="51" Margin="0,410,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName9" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP9" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP9" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP9" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP9" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack9" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
 
-        <Grid x:Name="grdEnemy10" HorizontalAlignment="Right" Height="51" Margin="0,460,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy10" HorizontalAlignment="Right" Height="51" Margin="0,460,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName10" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP10" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP10" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP10" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP10" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack10" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy11" HorizontalAlignment="Right" Height="51" Margin="0,510,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy11" HorizontalAlignment="Right" Height="51" Margin="0,510,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName11" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP11" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP11" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP11" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP11" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack11" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
 
-        <Grid x:Name="grdEnemy12" HorizontalAlignment="Right" Height="51" Margin="0,560,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy12" HorizontalAlignment="Right" Height="51" Margin="0,560,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName12" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP12" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP12" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP12" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP12" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack12" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy13" HorizontalAlignment="Right" Height="51" Margin="0,610,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy13" HorizontalAlignment="Right" Height="51" Margin="0,610,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName13" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP13" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP13" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP13" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP13" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack13" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy14" HorizontalAlignment="Right" Height="51" Margin="0,660,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy14" HorizontalAlignment="Right" Height="51" Margin="0,660,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName14" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP14" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP14" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP14" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP14" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack14" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
 
-        <Grid x:Name="grdEnemy15" HorizontalAlignment="Right" Height="51" Margin="0,710,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy15" HorizontalAlignment="Right" Height="51" Margin="0,710,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName15" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP15" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP15" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP15" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP15" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack15" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy16" HorizontalAlignment="Right" Height="51" Margin="0,760,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy16" HorizontalAlignment="Right" Height="51" Margin="0,760,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName16" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP16" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP16" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP16" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP16" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack16" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy17" HorizontalAlignment="Right" Height="51" Margin="0,810,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy17" HorizontalAlignment="Right" Height="51" Margin="0,810,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName17" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP17" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP17" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP17" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP17" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack17" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy18" HorizontalAlignment="Right" Height="51" Margin="0,860,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy18" HorizontalAlignment="Right" Height="51" Margin="0,860,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName18" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP18" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP18" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP18" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP18" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack18" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy19" HorizontalAlignment="Right" Height="51" Margin="0,910,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy19" HorizontalAlignment="Right" Height="51" Margin="0,910,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName19" Content="MMMMMMMMMMMMMMM" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP19" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP19" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP19" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP19" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack19" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Grid x:Name="grdEnemy20" HorizontalAlignment="Right" Height="51" Margin="0,960,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1">
+        <Grid x:Name="grdEnemy20" HorizontalAlignment="Right" Height="51" Margin="0,960,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
             <Label x:Name="lblEnemyName20" Content="aa" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="180"/>
             <Label x:Name="lblEnemyHP20" Content="HP:" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Margin="0,22,0,0"/>
             <Label x:Name="lblEnemyCurrentHP20" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="36,22,0,0"/>
             <Label x:Name="lblEnemySlashHP20" Content="/" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="15" Margin="72,22,0,0"/>
             <Label x:Name="lblEnemyTotalHP20" Content="8888" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="36" Margin="92,22,0,0"/>
+            <Button x:Name="btnEnemyAttack20" Content="Attack" HorizontalAlignment="Left" Margin="145,26,0,0" VerticalAlignment="Top" Width="50" Height="21.96"></Button>
 
         </Grid>
-        <Button x:Name="btnAttack" Content="Attack" Grid.Column="1" HorizontalAlignment="Left" Margin="365,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.245,-5.025"/>
+        <!--<Button x:Name="btnAttack" Content="Attack" Grid.Column="1" HorizontalAlignment="Left" Margin="365,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.245,-5.025"/>
         <ComboBox x:Name="cbxCharAtck" Grid.Column="1" HorizontalAlignment="Left" Margin="282,74,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbxVictim" Grid.Column="1" HorizontalAlignment="Left" Margin="282,96,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnUpdateChar" Content="Update" Grid.Column="1" HorizontalAlignment="Left" Margin="365,274,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbxCharUp" Grid.Column="1" HorizontalAlignment="Left" Margin="285,252,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbxVictim" Grid.Column="1" HorizontalAlignment="Left" Margin="282,96,0,0" VerticalAlignment="Top" Width="120"/>-->
+       
+
+        <Grid x:Name="grdAttack"  Height="150" Margin="100,500,0,0" VerticalAlignment="Top"  Width="650" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Label x:Name="lblAtkName" Content="Attacker: John"  Height="23"  Width="180" Grid.Column="0"/>
+            <Label x:Name="lblVicName" Content="Victim: Jeff"  Height="23"  Width="180" Grid.Column="0" Grid.Row="1"/>
+
+            <RadioButton GroupName="Defence" Content="Take hit"  IsChecked="True" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" />
+            <RadioButton GroupName="Defence" Content="Evade"  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"/>
+
+            <Button x:Name="btnAtkRmv" Content="Remove"   Width="50" Height="21.96" Grid.Column="2" Grid.Row="0" ></Button>
+            <Button x:Name="btnAtk" Content="Attack"  Width="50" Height="21.96" Grid.Column="2" Grid.Row="1"></Button>
+            
+            <ComboBox x:Name="cbxCharUp"   Width="100" Height="21.96" Grid.Column="3" Grid.Row="0"/>
+            <Button x:Name="btnUpdateChar" Content="Update" Width="100" Height="20"  Grid.Column="3" Grid.Row="1"/>
+            <Button x:Name="btnClearAllEnemies" Content="BEGONE" Width="100" Height="20"  Grid.Column="4" Grid.Row="4"/>
+            <Button x:Name="btnRest" Content="Rest"  Width="50" Height="21.96" Grid.Column="4" Grid.Row="3"></Button>
+
+
+        </Grid>
+
+
 
         <!--<Viewbox>-->
 

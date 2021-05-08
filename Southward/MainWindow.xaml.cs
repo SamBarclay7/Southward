@@ -22,9 +22,7 @@ namespace Southward
     {
         public MainWindow()
         {
-            InitializeComponent();
-            //AddCharacter addChar = new AddCharacter();
-            //addChar.Show();
+          
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
