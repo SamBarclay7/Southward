@@ -22,7 +22,7 @@ namespace Southward
     {
         public MainWindow()
         {
-          
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,6 +33,32 @@ namespace Southward
         private void cbxCurrentWeapon2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+        private void btnAddEnemies_Click(object sender, RoutedEventArgs e)
+        {
+            
+            AddEnemy ae = new AddEnemy();
+            ae.Owner = this;
+            ae.Show();
+           
+        }
+
+        private void btnAddChar_Click(object sender, RoutedEventArgs e)
+        {
+            enemies();
+            AddCharacter ac = new AddCharacter();
+            //ac.Owner = this;
+            ac.Show();
+        }
+
+        private void btnClearAllEnemies_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        public void enemies()
+        {
+            object[] en = new object[20];
         }
     }
 }

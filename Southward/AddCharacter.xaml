@@ -444,6 +444,14 @@
             <ComboBoxItem>20</ComboBoxItem>
         </ComboBox>
         <Button x:Name="btnSubmit" Content="Submit" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="302,333,0,0" VerticalAlignment="Top" Width="62" Click="btnSubmit_Click"/>
+        <ComboBox x:Name="cbxItem" HorizontalAlignment="Left" Height="39" Margin="208,106,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="Human" />
+            <ComboBoxItem Content="Elve" />
+            <ComboBoxItem Content="Falcon" />
+            <ComboBoxItem Content="Bat" />
+            <ComboBoxItem Content="Rabbit"/>
+            <ComboBoxItem Content="Dwarve" />
+        </ComboBox>
 
     </Grid>
 </Window>

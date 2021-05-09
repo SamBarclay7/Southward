@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\User\Source\Repos\Southward\Southward\App.xaml
-21133369909
+31740752536
 
-201180781228
+211229804445
 1921654412462
-AddCharacter.xaml;MainWindow.xaml;
+AddCharacter.xaml;AddEnemy.xaml;MainWindow.xaml;
 
-True
+False
 

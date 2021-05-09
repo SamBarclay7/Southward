@@ -18,4 +18,6 @@ C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward.csproj.CoreCompileInputs.cache
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward.genruntimeconfig.cache
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddCharacter.g.cs
+C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddEnemy.g.cs
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddCharacter.baml
+C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddEnemy.baml

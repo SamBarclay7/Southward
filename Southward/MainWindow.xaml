@@ -381,7 +381,9 @@
             
             <ComboBox x:Name="cbxCharUp"   Width="100" Height="21.96" Grid.Column="3" Grid.Row="0"/>
             <Button x:Name="btnUpdateChar" Content="Update" Width="100" Height="20"  Grid.Column="3" Grid.Row="1"/>
-            <Button x:Name="btnClearAllEnemies" Content="BEGONE" Width="100" Height="20"  Grid.Column="4" Grid.Row="4"/>
+            <Button x:Name="btnClearAllEnemies" Content="BEGONE" Width="100" Height="20"  Grid.Column="4" Grid.Row="4" Click="btnClearAllEnemies_Click"/>
+            <Button x:Name="btnAddChar" Content="Add Character" Width="100" Height="20"  Grid.Column="3" Grid.Row="4" Click="btnAddChar_Click"/>
+            <Button x:Name="btnAddEnemies" Content="Add Enemies" Width="100" Height="20"  Grid.Column="3" Grid.Row="3" Margin="5,2,4,0" VerticalAlignment="Top" Click="btnAddEnemies_Click"/>
             <Button x:Name="btnRest" Content="Rest"  Width="50" Height="21.96" Grid.Column="4" Grid.Row="3"></Button>
 
 
