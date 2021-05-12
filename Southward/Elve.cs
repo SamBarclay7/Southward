@@ -96,7 +96,7 @@ namespace Southward
         public void updateBaseStats()
         {
             health = 100 + (9 * vitality);
-            stamina = 22 + endurance;
+            stamina = 20 + endurance;
             manaPodoubles = 12 * mana;
             load = 20 + (4 * stability);
             movement = 5 + agility;

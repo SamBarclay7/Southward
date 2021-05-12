@@ -61,7 +61,7 @@ namespace Southward {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Southward;component/addenemy.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Southward;V1.0.0.0;component/addenemy.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddEnemy.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
