@@ -97,7 +97,7 @@ namespace Southward
         {
             health = 110 + (11 * vitality);
             stamina = 18 + endurance;
-            manaPodoubles = 11 * mana;
+            manaPodoubles = 4 + (6 * mana);
             load = 25 + (6 * stability);
             movement = 4 + agility;
         }
