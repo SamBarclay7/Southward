@@ -21,7 +21,9 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Column="4" Grid.Row="4"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Column="4" Grid.Row="4" Click="btnSubmit_Click"/>
+        <ComboBox x:Name="cbxType"  Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Width="120" />
+        <ComboBox x:Name="cbxNum"  Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Width="60" />
 
     </Grid>
 </Window>

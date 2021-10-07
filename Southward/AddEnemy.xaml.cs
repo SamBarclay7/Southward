@@ -17,9 +17,29 @@ namespace Southward
     /// </summary>
     public partial class AddEnemy : Window
     {
+        Object x;
+        int num;
         public AddEnemy()
         {
             InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            if(cbxType.Equals("FireDemon"))
+            {
+                x = new FireDemon();
+            }
+        }
+
+        public Object getEnemy()
+        {
+            return x;
+        }
+
+        public int getNum()
+        {
+            return num;
         }
     }
 }

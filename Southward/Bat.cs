@@ -98,7 +98,7 @@ namespace Southward
         {
             health = 95 + (9 * vitality);
             stamina = 20 + endurance;
-            manaPodoubles = 8 * mana;
+            manaPodoubles = 4 * mana;
             load = 18 + (4 * stability);
             movement = 6 + (1.5 * agility);
         }
@@ -160,7 +160,7 @@ namespace Southward
             updateBaseStats();
             updateBaseResistances();
         }
-        public void updatedoubleimidation(double amount)
+        public void updateIntimidation(double amount)
         {
             intimidation += amount;
             updateDefence();
