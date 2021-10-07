@@ -23,19 +23,19 @@ namespace Southward
         private String weapon2;
         private String weapon3;
 
-        private int vitality;
-        private int endurance;
-        private int mana;
-        private int stability;
-        private int agility;
-        private int charisma;
-        private int intimidation;
-        private int strength;
-        private int dexterity;
-        private int skill;
-        private int hearth;
-        private int spirit;
-        private int mind;
+        private double vitality;
+        private double endurance;
+        private double mana;
+        private double stability;
+        private double agility;
+        private double charisma;
+        private double intimidation;
+        private double strength;
+        private double dexterity;
+        private double skill;
+        private double hearth;
+        private double spirit;
+        private double mind;
         
 
             
@@ -87,67 +87,72 @@ namespace Southward
             return weapon3;
         }
 
-        public int getVitality()
+        public String getSpecies()
+        {
+            return species;
+        }
+
+        public double getVitality()
         {
             return vitality;
         }
 
-        public int getEndurance()
+        public double getEndurance()
         {
             return endurance;
         }
 
-        public int getMana()
+        public double getMana()
         {
             return mana;
         }
 
-        public int getStability()
+        public double getStability()
         {
             return stability;
         }
 
-        public int getAgility()
+        public double getAgility()
         {
             return agility;
         }
 
-        public int getCharisma()
+        public double getCharisma()
         {
             return charisma;
         }
 
-        public int getIntimidation()
+        public double getIntimidation()
         {
             return intimidation;
         }
 
-        public int getStrength()
+        public double getStrength()
         {
             return strength;
         }
 
-        public int getDexterity()
+        public double getDexterity()
         {
             return dexterity;
         }
 
-        public int getSkill()
+        public double getSkill()
         {
             return skill;
         }
 
-        public int getHearth()
+        public double getHearth()
         {
             return hearth;
         }
 
-        public int getSpirit()
+        public double getSpirit()
         {
             return spirit;
         }
 
-        public int getMind()
+        public double getMind()
         {
             return mind;
         }

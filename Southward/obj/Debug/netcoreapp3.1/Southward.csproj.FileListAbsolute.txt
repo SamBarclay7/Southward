@@ -4,7 +4,6 @@ C:\Users\User\Source\Repos\Southward\Southward\bin\Debug\netcoreapp3.1\Southward
 C:\Users\User\Source\Repos\Southward\Southward\bin\Debug\netcoreapp3.1\Southward.runtimeconfig.dev.json
 C:\Users\User\Source\Repos\Southward\Southward\bin\Debug\netcoreapp3.1\Southward.dll
 C:\Users\User\Source\Repos\Southward\Southward\bin\Debug\netcoreapp3.1\Southward.pdb
-C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward.csprojAssemblyReference.cache
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward_MarkupCompile.cache
@@ -21,3 +20,5 @@ C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddCharac
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddEnemy.g.cs
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddCharacter.baml
 C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\AddEnemy.baml
+C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Southward\Southward\obj\Debug\netcoreapp3.1\Southward.GeneratedMSBuildEditorConfig.editorconfig
