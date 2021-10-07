@@ -60,22 +60,12 @@ namespace Southward
 
         private void btnAddChar_Click(object sender, RoutedEventArgs e)
         {
-            // grid.Visibility = Visibility.Hidden;
-            //grbAddChar.Visibility = Visibility.Visible;
-            //AddCharacter ac = new AddCharacter();
-            //ac.Owner = this;
-            //ac.Show();
-
-            //if()
-            Human.test();
+            //using reflection to create the new player to avoid a massive switch statement
             String objectToInstantiate = "Southward." + curPlayerType.Substring(38) + ", Southward";
-            Trace.WriteLine("fuck up cunt: " + curPlayerType.Substring(38));
-            Trace.WriteLine("fuck up cunt2: " + objectToInstantiate);
             var objectType = Type.GetType(objectToInstantiate);
             var instantiatedObject = Activator.CreateInstance(objectType, new object[] {curPlayerType.Substring(38), Double.Parse(tbxVitality.Text), Double.Parse(tbxEndurance.Text), Double.Parse(tbxMana.Text), Double.Parse(tbxStability.Text), Double.Parse(tbxAgility.Text), Double.Parse(tbxCharisma.Text), Double.Parse(tbxIntimidation.Text),
                 Double.Parse(tbxStrength.Text), Double.Parse(tbxDexterity.Text), Double.Parse(tbxSkill.Text), Double.Parse(tbxHearth.Text), Double.Parse(tbxSpirit.Text), Double.Parse(tbxMind.Text) });
-            //Trace.WriteLine((Player)instantiatedObject.getLblHP());
-            
+         
             gp.addPlayer((Player)instantiatedObject);
         }
 
@@ -93,6 +83,7 @@ namespace Southward
         {
             if(gp.getNumOfEnemies() < 19)
             {
+                //using reflection to create the new player to avoid a massive switch statement
                 String objectToInstantiate = "Southward." + curAddEnType.Substring(38) + ", Southward";
                 var objectType = Type.GetType(objectToInstantiate);
                 var instantiatedObject = Activator.CreateInstance(objectType);
