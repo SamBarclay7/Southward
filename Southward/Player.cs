@@ -40,6 +40,26 @@ namespace Southward
             this.mind = mind;
         }
 
+        public String toString()
+        {
+           
+            String x ="";
+            x += "VIT = " + vitality + "\n";
+            x += "END = " + endurance + "\n";
+            x += "MNA = " + mana + "\n";
+            x += "STB = " + stability + "\n";
+            x += "AGL = " + agility + "\n";
+            x += "CHR = " + charisma + "\n";
+            x += "INT = " + intimidation + "\n";
+            x += "STR = " + strength + "\n";
+            x += "DXT = " + dexterity + "\n";
+            x += "SKL = " + skill + "\n";
+            x += "HRT = " + hearth + "\n";
+            x += "SPR = " + spirit + "\n";
+            x += "MND = " + mind + "\n";
+            return x;
+
+        }
      
 
         public void setVitality(double vitality)

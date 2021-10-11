@@ -77,6 +77,8 @@ namespace Southward
             return "hp = " + curHP + " / " + health;
         }
 
+
+
         
 
         public void setCurHP(double curHP)

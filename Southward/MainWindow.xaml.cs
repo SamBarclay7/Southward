@@ -76,7 +76,7 @@ namespace Southward
                 var objectType = Type.GetType(objectToInstantiate);
                 var instantiatedObject = Activator.CreateInstance(objectType);
                 Trace.WriteLine("hello: " + instantiatedObject);
-                gp.addCharacter(instantiatedObject);
+                gp.addPlayer(instantiatedObject);
                 Label lblNew = new Label();
                 lblNew.Content = gp.getEnemyName(gp.getNumOfEnemies()) +
                        "\n" + gp.getLblHp(gp.getNumOfEnemies());
