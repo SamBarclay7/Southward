@@ -57,7 +57,6 @@
         <ComboBox x:Name="cbxCharAtck" Grid.Column="1" HorizontalAlignment="Left" Margin="282,74,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cbxVictim" Grid.Column="1" HorizontalAlignment="Left" Margin="282,96,0,0" VerticalAlignment="Top" Width="120"/>-->
                 <Button x:Name="btnClearAllEnemies" Content="BEGONE" Width="100" Height="20"  Grid.Column="6" Grid.Row="1" Click="btnClearAllEnemies_Click" Margin="29,0,30,15" Grid.RowSpan="2"/>
-                <Button x:Name="btnAddChar" Content="Add Character" Width="100" Height="20"  Grid.Column="8" Grid.Row="4" Click="btnAddChar_Click" Margin="30,0,29,15" Grid.RowSpan="2" />
 
 
                 <ComboBox x:Name="cbxEnemyType"  Grid.Column="6"  Grid.Row="10" Height="20"   SelectionChanged="cbxEnemyType_SelectionChanged" IsSynchronizedWithCurrentItem="True" Margin="0,0,158,15" Grid.ColumnSpan="2" Grid.RowSpan="2" >

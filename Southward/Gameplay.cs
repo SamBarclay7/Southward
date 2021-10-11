@@ -25,15 +25,17 @@ namespace Southward
         }
 
 
-        public void addPlayer(Player player)
+        public void addPlayer(Object player)
         {
             if(numOfCharacters < 7)
             {
-                players[++numOfCharacters] = player;
+                players[++numOfCharacters] = (Player)player;
             }
 
-            Trace.WriteLine(player.getLblHP());
+            Trace.WriteLine(players[numOfCharacters].toString());
         }
+
+       
 
         public void addEnemy(Enemy enemy)
         {
@@ -46,10 +48,12 @@ namespace Southward
         }
         public void addCharacter(Object c)
         {
-            if (numOfEnemies < 19)
+            if (numOfCharacters < 8)
             {
-                en[++numOfEnemies] = (Enemy)c;
+                players[++numOfCharacters] = (Player)c;
             }
+
+
         }
 
         public void removeAllEnemies()
