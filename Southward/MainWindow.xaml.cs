@@ -44,19 +44,7 @@ namespace Southward
         {
 
         }
-        private void btnAddEnemies_Click(object sender, RoutedEventArgs e)
-        {
-            
-
-            if(cbxEnemyType.SelectedItem.Equals("FireDemon"))
-            {
-                FireDemon xy = new FireDemon();
-                gp.Equals(xy);
-            }
-
-            
-
-        }
+        
 
         private void btnAddChar_Click(object sender, RoutedEventArgs e)
         {
